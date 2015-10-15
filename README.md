@@ -1,2 +1,2 @@
-# ios-swift-example
-ios swift example project
+# ios-client
+ios client project
