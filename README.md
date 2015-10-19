@@ -1,2 +1,1 @@
-# ios-client
-ios client project
+# honeyqa-iOS

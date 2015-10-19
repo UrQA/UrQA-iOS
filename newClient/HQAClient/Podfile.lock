@@ -1,0 +1,10 @@
+PODS:
+  - PLCrashReporter (1.2.0)
+
+DEPENDENCIES:
+  - PLCrashReporter (~> 1.2)
+
+SPEC CHECKSUMS:
+  PLCrashReporter: 16927d86a093d0b9cf110545dacb77cb0ed0f243
+
+COCOAPODS: 0.39.0

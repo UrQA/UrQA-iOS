@@ -1,0 +1,346 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B07DFEFE1BD51197006D72A5 /* HQAClient.h in Headers */ = {isa = PBXBuildFile; fileRef = B07DFEFD1BD51197006D72A5 /* HQAClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA78BE9CA558764373BA4BF0 /* libPods-HQAClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 551915A003DCF27C2339C213 /* libPods-HQAClient.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		551915A003DCF27C2339C213 /* libPods-HQAClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HQAClient.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFFA3F45A4F7CFB7B1EC726A /* Pods-HQAClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HQAClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HQAClient/Pods-HQAClient.debug.xcconfig"; sourceTree = "<group>"; };
+		B07DFEFA1BD51197006D72A5 /* HQAClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HQAClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B07DFEFD1BD51197006D72A5 /* HQAClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HQAClient.h; sourceTree = "<group>"; };
+		B07DFEFF1BD51197006D72A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC186D2C115945B5EC52085D /* Pods-HQAClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HQAClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-HQAClient/Pods-HQAClient.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B07DFEF61BD51197006D72A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA78BE9CA558764373BA4BF0 /* libPods-HQAClient.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AD32E9673FEEF4DBC955A9A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AFFA3F45A4F7CFB7B1EC726A /* Pods-HQAClient.debug.xcconfig */,
+				BC186D2C115945B5EC52085D /* Pods-HQAClient.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		46033F74387E8F7FF6EF5B35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				551915A003DCF27C2339C213 /* libPods-HQAClient.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B07DFEF01BD51197006D72A5 = {
+			isa = PBXGroup;
+			children = (
+				B07DFEFC1BD51197006D72A5 /* HQAClient */,
+				B07DFEFB1BD51197006D72A5 /* Products */,
+				0AD32E9673FEEF4DBC955A9A /* Pods */,
+				46033F74387E8F7FF6EF5B35 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B07DFEFB1BD51197006D72A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B07DFEFA1BD51197006D72A5 /* HQAClient.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B07DFEFC1BD51197006D72A5 /* HQAClient */ = {
+			isa = PBXGroup;
+			children = (
+				B07DFEFD1BD51197006D72A5 /* HQAClient.h */,
+				B07DFEFF1BD51197006D72A5 /* Info.plist */,
+			);
+			path = HQAClient;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B07DFEF71BD51197006D72A5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B07DFEFE1BD51197006D72A5 /* HQAClient.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B07DFEF91BD51197006D72A5 /* HQAClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B07DFF021BD51197006D72A5 /* Build configuration list for PBXNativeTarget "HQAClient" */;
+			buildPhases = (
+				8732E3CDC20328136840A63F /* Check Pods Manifest.lock */,
+				B07DFEF51BD51197006D72A5 /* Sources */,
+				B07DFEF61BD51197006D72A5 /* Frameworks */,
+				B07DFEF71BD51197006D72A5 /* Headers */,
+				B07DFEF81BD51197006D72A5 /* Resources */,
+				270CDC5B2D654B7C820B1CA3 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HQAClient;
+			productName = HQAClient;
+			productReference = B07DFEFA1BD51197006D72A5 /* HQAClient.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B07DFEF11BD51197006D72A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = honeyqa;
+				TargetAttributes = {
+					B07DFEF91BD51197006D72A5 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = B07DFEF41BD51197006D72A5 /* Build configuration list for PBXProject "HQAClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B07DFEF01BD51197006D72A5;
+			productRefGroup = B07DFEFB1BD51197006D72A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B07DFEF91BD51197006D72A5 /* HQAClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B07DFEF81BD51197006D72A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		270CDC5B2D654B7C820B1CA3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HQAClient/Pods-HQAClient-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8732E3CDC20328136840A63F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B07DFEF51BD51197006D72A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B07DFF001BD51197006D72A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B07DFF011BD51197006D72A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B07DFF031BD51197006D72A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFFA3F45A4F7CFB7B1EC726A /* Pods-HQAClient.debug.xcconfig */;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = HQAClient/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = io.honeyqa.HQAClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B07DFF041BD51197006D72A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC186D2C115945B5EC52085D /* Pods-HQAClient.release.xcconfig */;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = HQAClient/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = io.honeyqa.HQAClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B07DFEF41BD51197006D72A5 /* Build configuration list for PBXProject "HQAClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B07DFF001BD51197006D72A5 /* Debug */,
+				B07DFF011BD51197006D72A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B07DFF021BD51197006D72A5 /* Build configuration list for PBXNativeTarget "HQAClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B07DFF031BD51197006D72A5 /* Debug */,
+				B07DFF041BD51197006D72A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B07DFEF11BD51197006D72A5 /* Project object */;
+}
