@@ -77,6 +77,9 @@
         
         NSMutableArray *stackTrace = [NSMutableArray new];
         @try {
+            for(PLCrashReportBinaryImageInfo *image in crashReport.images){
+                image.
+            }
             for (PLCrashReportThreadInfo *thread in crashReport.threads)
             {
                 NSMutableDictionary *dict = [NSMutableDictionary new];
@@ -126,8 +129,8 @@
             }
         }
         @catch (NSException *exception) {
-#if URQA_ENABLE_ERROR_LOG
-            URLog(@"Error, Sending crash reports: %@", exception);
+#if HQA_ENABLE_ERROR_LOG
+            HQALog(@"Error, Sending crash reports: %@", exception);
 #endif
             return nil;
         }

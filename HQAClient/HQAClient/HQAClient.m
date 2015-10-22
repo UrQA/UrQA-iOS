@@ -139,11 +139,8 @@ bool beingDebugged(void)
 
 + (HQAClient *)sharedControllerWithAPIKey:(NSString *)APIKey
 {
-    NSLog(@"Controller Initialize A");
     HQAClient *controller = [HQAClient sharedController];
-    NSLog(@"Controller Initialize B");
     [controller setSecretAPIKey:APIKey];
-    NSLog(@"Controller Initialize C");
     return controller;
 }
 
@@ -220,16 +217,11 @@ bool beingDebugged(void)
     _secretAPIKey = secretAPIKey;
     if (!_sessionRequester)
     {
-        NSLog(@"setSecretKey A");
         _sessionRequester = [[HQANetworkConnect alloc] initWithAPIKey:_secretAPIKey deviceInfo:[HQADeviceManager createDeviceReport]];
-        NSLog(@"setSecretKey B");
         [self captureCrash];
-        NSLog(@"setSecretKey C");
     }
     [self sessionUpdate];
-    NSLog(@"setSecretKey D");
     [self sendCrashReporter];
-    NSLog(@"setSecretKey E");
 }
 
 
@@ -251,8 +243,7 @@ bool beingDebugged(void)
     NSString *documentsDirectory = [paths objectAtIndex:0];
     
     /* Crash Reporter Initialize */
-    PLCrashReporterConfig *config = [[PLCrashReporterConfig alloc] initWithSignalHandlerType:PLCrashReporterSignalHandlerTypeMach
-                                                                       symbolicationStrategy:PLCrashReporterSymbolicationStrategyAll];
+    PLCrashReporterConfig *config = [[PLCrashReporterConfig alloc] initWithSignalHandlerType:PLCrashReporterSignalHandlerTypeMach symbolicationStrategy:PLCrashReporterSymbolicationStrategyNone];
     _crashReporter = [[PLCrashReporter alloc] initWithConfiguration:config];
     
     /* Last Crash Information */
@@ -271,7 +262,6 @@ bool beingDebugged(void)
     /* Crash Reporter Start */
     if (!beingDebugged())
     {
-        HQALog(@"!beingDebugged");
         NSError *error;
         PLCrashReporterCallbacks cb = {
             .version = 0,
@@ -302,15 +292,10 @@ bool beingDebugged(void)
  */
 - (void)sessionUpdate
 {
-    NSLog(@"Session Update A");
     [_sessionRequester cancelRequest];
-    NSLog(@"Session Update B");
     _sessionKey = @"";
-    NSLog(@"Session Update C");
     [_sessionRequester sendRequest:^(id object) {
-        NSLog(@"Session Update D");
         _sessionKey = [object objectForKey:@"idsession"];
-        NSLog(@"Session Update E");
         if(_sessionKey)
             HQALog(@"Session ID: %@", _sessionKey);
     } failure:nil completion:nil];
@@ -508,7 +493,6 @@ bool beingDebugged(void)
         
         return NO;
     }
-    
     reportParser = [[PLCrashReport alloc] initWithData:crashData error:&error];
     if (!reportParser)
     {
@@ -519,7 +503,6 @@ bool beingDebugged(void)
         
         return NO;
     }
-    
     crashData = [NSData dataWithContentsOfFile:systemPath options:NSDataReadingMappedIfSafe error:&error];
     HQADeviceInfo *deviceInfo;
     if (!crashData)
@@ -529,9 +512,9 @@ bool beingDebugged(void)
 #endif
         deviceInfo = [HQADeviceManager createDeviceReport];
     }
-    else
+    else{
         deviceInfo = [[HQADeviceInfo alloc] initWithData:[_dataParser parseData:crashData]];
-    
+    }
     crashData = [NSData dataWithContentsOfFile:eventPathPath options:NSDataReadingMappedIfSafe error:&error];
     NSArray *eventPath;
     if (!crashData)
