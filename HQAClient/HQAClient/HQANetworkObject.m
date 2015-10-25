@@ -62,12 +62,10 @@
             failure:(void (^)(void))failure
          completion:(void (^)(void))completion
 {
-    NSLog(@"sendRequest A");
     NSURL *url = [NSURL URLWithString:requestURL];
     NSMutableURLRequest *req = [[NSMutableURLRequest alloc] initWithURL:url
                                                             cachePolicy:NSURLRequestUseProtocolCachePolicy
                                                         timeoutInterval:10.0f];
-    NSLog(@"sendRequest B");
     [req setHTTPMethod:requestMethod];
     [req setValue:[NSString stringWithFormat:@"application/%@", [HQA_REQUST_TYPE lowercaseString]] forHTTPHeaderField:@"Content-Type"];
     if(requestHeader)
@@ -79,9 +77,7 @@
                 [req setValue:[requestHeader allValues][i] forHTTPHeaderField:[requestHeader allKeys][i]];
         }
     }
-    NSLog(@"sendRequest C");
     [req setHTTPBody:[_dataParser parseObject:requestData]];
-    NSLog(@"sendRequest D");
 #if JQA_ENABLE_REQUEST_LOG
     HQALog(@"%@", [[NSString alloc] initWithData:[_dataParser parseObject:requestData] encoding:NSUTF8StringEncoding]);
 #endif

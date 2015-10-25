@@ -50,7 +50,6 @@
 
 - (NSData *)parseObject:(id)object
 {
-    NSLog(@"ParseObject");
     if(object)
     {
         id objectData = nil;

@@ -28,12 +28,9 @@
 @interface HQAClient()
 {
     BOOL                                    _isSendingCrash;
-    
     NSString                                *_sessionKey;
-    
     NSString                                *_crashQueuePath;
     NSMutableArray                          *_crashQueueFiles;
-    
     HQANetworkConnect                        *_sessionRequester;
 }
 
@@ -554,7 +551,6 @@ bool beingDebugged(void)
 #if HQA_ENABLE_SUCCESS_LOG
         HQALog(@"Success, Sended crash reports: %@", crashFile);
 #endif
-        
         fileError();
         
         if (index > 0)

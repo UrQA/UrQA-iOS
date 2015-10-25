@@ -18,26 +18,20 @@
 
 - (NSData *)parseObject:(id)object
 {
-    NSLog(@"ParseJSONObject");
     if(object)
     {
         id objectData = nil;
-        NSLog(@"ParseJSONObjectA");
         if ([object isKindOfClass:[HQADataObject class]]){
-            NSLog(@"ParseJSONObjectB");
             objectData = [object objectData];
         }
         else{
             objectData = object;
-            NSLog(@"ParseJSONObjectC");
         }
         if([objectData isKindOfClass:[NSArray class]] ||
            [objectData isKindOfClass:[NSDictionary class]]){
-            NSLog(@"ParseJSONObjectD");
             return [objectData JSONData];
         }
     }
-    NSLog(@"ParseJSONObjectE");
     return [super parseObject:object];
 }
 

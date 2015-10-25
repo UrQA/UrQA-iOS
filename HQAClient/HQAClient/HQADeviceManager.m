@@ -473,12 +473,10 @@
                                @"iPhone5,4": @[@"iPhone 5C",       @"Global",      @[@"A1507", @"A1516", @"A1526", @"A1529"]],
                                @"iPhone6,1": @[@"iPhone 5S",       @"GSM",         @[@"A1433", @"A1533"]],
                                @"iPhone6,2": @[@"iPhone 5S",       @"Global",      @[@"A1457", @"A1518", @"A1528", @"A1530"]],
-                               
-                               // I think...
-                               @"iPhone7,1": @[@"iPhone 6",        @"GSM",         @[]],
+                               @"iPhone7,1": @[@"iPhone 6+",        @"Global",         @[]],
                                @"iPhone7,2": @[@"iPhone 6",        @"Global",      @[]],
-                               @"iPhone7,3": @[@"iPhone 6+",       @"GSM",         @[]],
-                               @"iPhone7,4": @[@"iPhone 6+",       @"Global",      @[]],
+                               @"iPhone8,1": @[@"iPhone 6s",        @"Global",         @[]],
+                               @"iPhone8,2": @[@"iPhone 6s+",        @"Global",      @[]],
                                
                                // iPod
                                @"iPod1,1":   @[@"iPod touch 1G",   @"",            @[@"A1213"]],

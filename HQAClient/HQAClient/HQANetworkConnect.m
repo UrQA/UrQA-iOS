@@ -36,14 +36,11 @@
         if (!APIKey)
             APIKey = @"";
         
-        NSLog(@"Initialize A");
         [_arguments addObject:(_APIKey = APIKey)];
         [_arguments addObject:(_deviceInfo = device)];
-        NSLog(@"Initialize B");
         requestURL = [NSString stringWithFormat:@"%@%@", HQA_DOMAIN, @"/client/session"];
         requestMethod = @"POST";
         requestHeader = nil;
-        NSLog(@"Initialize C");
         [self refreshRequestData];
     }
     
