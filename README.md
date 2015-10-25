@@ -1,5 +1,27 @@
 # honeyqa-iOS
 
+## Usage
+
+1. Initialize in didFinishLaunchingWithOptions (AppDelegate)
+
+   ```[HQAClient sharedControllerWithAPIKey:@"YOUR_API_Key"]```
+2. If Application crashed, HQAClient will send crash data to HoneyQA Server
+3. Or, you can send exception information manually by using
+
+   ```[HQAClient logException:(NSException *)]```
+   
+   ```[HQAClient logException:(NSException *) withTag:@"Tag name"]```
+   
+   ```[HQAClient logException:(NSException *) withTag:@"Tag name" andErrorRank:(HQAErrorRank)]```
+   
+4. If you using `leaveBreadcrumb`, you can track user pattern untill application crash or exception
+
+   ```[HQAClient leaveBreadcrumb:(Integer : Linenumber)]```
+   
+   ```[HQAClient logException:(NSException *)]```
+   
+   ```[HQAClient logException:(NSException *)]```
+
 ## route
 
 * Session
