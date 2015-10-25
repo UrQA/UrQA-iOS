@@ -182,13 +182,13 @@
         }
         if (exceptionInfo)
         {
-            [report_process setObject:exceptionInfo.exceptionName forKey:@"exceptionName"];
-            [report_process setObject:exceptionInfo.exceptionReason forKey:@"exceptionReason"];
+            // [report_process setObject:exceptionInfo.exceptionName forKey:@"exceptionName"];
+            // [report_process setObject:exceptionInfo.exceptionReason forKey:@"exceptionReason"];
             _exceptionName = exceptionInfo.exceptionName;
             _exceptionReason = exceptionInfo.exceptionReason;
             
             if ([exceptionInfo.stackTrace count] > 0){
-                [report_process setObject:exceptionInfo.stackTrace[0] forKey:@"exceptionFunction"];
+                // [report_process setObject:exceptionInfo.stackTrace[0] forKey:@"exceptionFunction"];
                 _exceptionFunction = exceptionInfo.stackTrace[0];
             }
         }
@@ -196,22 +196,25 @@
         {
             if (crashReport.hasExceptionInfo)
             {
-                [report_process setObject:crashReport.exceptionInfo.exceptionName forKey:@"exceptionName"];
-                [report_process setObject:crashReport.exceptionInfo.exceptionReason forKey:@"exceptionReason"];
+                // [report_process setObject:crashReport.exceptionInfo.exceptionName forKey:@"exceptionName"];
+                // [report_process setObject:crashReport.exceptionInfo.exceptionReason forKey:@"exceptionReason"];
                 _exceptionName = crashReport.exceptionInfo.exceptionName;
                 _exceptionReason = crashReport.exceptionInfo.exceptionReason;
-                
                 if ([crashReport.exceptionInfo.stackFrames count] > 2 &&
                     [crashReport.exceptionInfo.stackFrames[2] symbolInfo] &&
                     [crashReport.exceptionInfo.stackFrames[2] symbolInfo].symbolName){
-                    [report_process setObject:[crashReport.exceptionInfo.stackFrames[2] symbolInfo].symbolName forKey:@"exceptionFunction"];
                     _exceptionFunction = [crashReport.exceptionInfo.stackFrames[2] symbolInfo].symbolName;
+                    /*
+                    if ([crashReport.exceptionInfo.stackFrames[2] symbolInfo] != nil){
+                        [report_process setObject:[crashReport.exceptionInfo.stackFrames[2] symbolInfo].symbolName forKey:@"exceptionFunction"];
+                    }
+                    */
                 }
             }
             else
             {
-                [report_process setObject:crashReport.exceptionInfo.exceptionName forKey:@"exceptionName"];
-                [report_process setObject:crashReport.exceptionInfo.exceptionReason forKey:@"exceptionReason"];
+                // [report_process setObject:crashReport.exceptionInfo.exceptionName forKey:@"exceptionName"];
+                // [report_process setObject:crashReport.exceptionInfo.exceptionReason forKey:@"exceptionReason"];
                 _exceptionName = crashReport.signalInfo.name;
                 _exceptionReason = crashReport.signalInfo.code;
                 _exceptionFunction = [NSString stringWithFormat:@"0x%llx", crashReport.signalInfo.address];
