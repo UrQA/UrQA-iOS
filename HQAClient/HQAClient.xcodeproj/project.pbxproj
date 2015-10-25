@@ -7,111 +7,109 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B0355FA81BD56FBD00DD54EB /* HQAEventPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B0355FA71BD56FBD00DD54EB /* HQAEventPathManager.m */; settings = {ASSET_TAGS = (); }; };
-		B0355FAC1BD5705500DD54EB /* HQAJSONParser.h in Headers */ = {isa = PBXBuildFile; fileRef = B0355FAB1BD5705500DD54EB /* HQAJSONParser.h */; settings = {ASSET_TAGS = (); }; };
-		B0355FAE1BD5706D00DD54EB /* HQAParser.h in Headers */ = {isa = PBXBuildFile; fileRef = B0355FAD1BD5706D00DD54EB /* HQAParser.h */; settings = {ASSET_TAGS = (); }; };
-		B0355FB01BD5711500DD54EB /* HQAJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B0355FAF1BD5711500DD54EB /* HQAJSONParser.m */; settings = {ASSET_TAGS = (); }; };
-		B0355FB21BD5711D00DD54EB /* HQAParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B0355FB11BD5711D00DD54EB /* HQAParser.m */; settings = {ASSET_TAGS = (); }; };
-		B0355FB51BD572A200DD54EB /* HQANetworkConnect.h in Headers */ = {isa = PBXBuildFile; fileRef = B0355FB41BD572A200DD54EB /* HQANetworkConnect.h */; settings = {ASSET_TAGS = (); }; };
-		B0355FB71BD572DD00DD54EB /* HQANetworkException.h in Headers */ = {isa = PBXBuildFile; fileRef = B0355FB61BD572DD00DD54EB /* HQANetworkException.h */; settings = {ASSET_TAGS = (); }; };
-		B0355FB91BD572EE00DD54EB /* HQANetworkExceptionLog.h in Headers */ = {isa = PBXBuildFile; fileRef = B0355FB81BD572EE00DD54EB /* HQANetworkExceptionLog.h */; settings = {ASSET_TAGS = (); }; };
-		B0355FBB1BD572FE00DD54EB /* HQANetworkObject.h in Headers */ = {isa = PBXBuildFile; fileRef = B0355FBA1BD572FE00DD54EB /* HQANetworkObject.h */; settings = {ASSET_TAGS = (); }; };
-		B0355FBD1BD5735F00DD54EB /* HQANetworkObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B0355FBC1BD5735F00DD54EB /* HQANetworkObject.m */; settings = {ASSET_TAGS = (); }; };
-		B0355FBF1BD5745800DD54EB /* HQANetworkConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = B0355FBE1BD5745800DD54EB /* HQANetworkConnect.m */; settings = {ASSET_TAGS = (); }; };
-		B0355FC11BD574AC00DD54EB /* HQANetworkException.m in Sources */ = {isa = PBXBuildFile; fileRef = B0355FC01BD574AC00DD54EB /* HQANetworkException.m */; settings = {ASSET_TAGS = (); }; };
-		B0355FC31BD5762800DD54EB /* HQANetworkExceptionLog.m in Sources */ = {isa = PBXBuildFile; fileRef = B0355FC21BD5762800DD54EB /* HQANetworkExceptionLog.m */; settings = {ASSET_TAGS = (); }; };
-		B050592F1BD654B400F8F17A /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = B05059091BD654B400F8F17A /* AFHTTPRequestOperation.h */; settings = {ASSET_TAGS = (); }; };
-		B05059301BD654B400F8F17A /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B050590A1BD654B400F8F17A /* AFHTTPRequestOperation.m */; settings = {ASSET_TAGS = (); }; };
-		B05059311BD654B400F8F17A /* AFHTTPRequestOperationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B050590B1BD654B400F8F17A /* AFHTTPRequestOperationManager.h */; settings = {ASSET_TAGS = (); }; };
-		B05059321BD654B400F8F17A /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B050590C1BD654B400F8F17A /* AFHTTPRequestOperationManager.m */; settings = {ASSET_TAGS = (); }; };
-		B05059331BD654B400F8F17A /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B050590D1BD654B400F8F17A /* AFHTTPSessionManager.h */; settings = {ASSET_TAGS = (); }; };
-		B05059341BD654B400F8F17A /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B050590E1BD654B400F8F17A /* AFHTTPSessionManager.m */; settings = {ASSET_TAGS = (); }; };
-		B05059351BD654B400F8F17A /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = B050590F1BD654B400F8F17A /* AFNetworking.h */; settings = {ASSET_TAGS = (); }; };
-		B05059361BD654B400F8F17A /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B05059101BD654B400F8F17A /* AFNetworkReachabilityManager.h */; settings = {ASSET_TAGS = (); }; };
-		B05059371BD654B400F8F17A /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B05059111BD654B400F8F17A /* AFNetworkReachabilityManager.m */; settings = {ASSET_TAGS = (); }; };
-		B05059381BD654B400F8F17A /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = B05059121BD654B400F8F17A /* AFSecurityPolicy.h */; settings = {ASSET_TAGS = (); }; };
-		B05059391BD654B400F8F17A /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = B05059131BD654B400F8F17A /* AFSecurityPolicy.m */; settings = {ASSET_TAGS = (); }; };
-		B050593A1BD654B400F8F17A /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = B05059141BD654B400F8F17A /* AFURLConnectionOperation.h */; settings = {ASSET_TAGS = (); }; };
-		B050593B1BD654B400F8F17A /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B05059151BD654B400F8F17A /* AFURLConnectionOperation.m */; settings = {ASSET_TAGS = (); }; };
-		B050593C1BD654B400F8F17A /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = B05059161BD654B400F8F17A /* AFURLRequestSerialization.h */; settings = {ASSET_TAGS = (); }; };
-		B050593D1BD654B400F8F17A /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = B05059171BD654B400F8F17A /* AFURLRequestSerialization.m */; settings = {ASSET_TAGS = (); }; };
-		B050593E1BD654B400F8F17A /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = B05059181BD654B400F8F17A /* AFURLResponseSerialization.h */; settings = {ASSET_TAGS = (); }; };
-		B050593F1BD654B400F8F17A /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = B05059191BD654B400F8F17A /* AFURLResponseSerialization.m */; settings = {ASSET_TAGS = (); }; };
-		B05059401BD654B400F8F17A /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B050591A1BD654B400F8F17A /* AFURLSessionManager.h */; settings = {ASSET_TAGS = (); }; };
-		B05059411BD654B400F8F17A /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B050591B1BD654B400F8F17A /* AFURLSessionManager.m */; settings = {ASSET_TAGS = (); }; };
-		B05059421BD654B400F8F17A /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B050591D1BD654B400F8F17A /* AFNetworkActivityIndicatorManager.h */; settings = {ASSET_TAGS = (); }; };
-		B05059431BD654B400F8F17A /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B050591E1BD654B400F8F17A /* AFNetworkActivityIndicatorManager.m */; settings = {ASSET_TAGS = (); }; };
-		B05059441BD654B400F8F17A /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = B050591F1BD654B400F8F17A /* UIActivityIndicatorView+AFNetworking.h */; settings = {ASSET_TAGS = (); }; };
-		B05059451BD654B400F8F17A /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = B05059201BD654B400F8F17A /* UIActivityIndicatorView+AFNetworking.m */; settings = {ASSET_TAGS = (); }; };
-		B05059461BD654B400F8F17A /* UIAlertView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = B05059211BD654B400F8F17A /* UIAlertView+AFNetworking.h */; settings = {ASSET_TAGS = (); }; };
-		B05059471BD654B400F8F17A /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = B05059221BD654B400F8F17A /* UIAlertView+AFNetworking.m */; settings = {ASSET_TAGS = (); }; };
-		B05059481BD654B400F8F17A /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = B05059231BD654B400F8F17A /* UIButton+AFNetworking.h */; settings = {ASSET_TAGS = (); }; };
-		B05059491BD654B400F8F17A /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = B05059241BD654B400F8F17A /* UIButton+AFNetworking.m */; settings = {ASSET_TAGS = (); }; };
-		B050594A1BD654B400F8F17A /* UIImage+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = B05059251BD654B400F8F17A /* UIImage+AFNetworking.h */; settings = {ASSET_TAGS = (); }; };
-		B050594B1BD654B400F8F17A /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = B05059261BD654B400F8F17A /* UIImageView+AFNetworking.h */; settings = {ASSET_TAGS = (); }; };
-		B050594C1BD654B400F8F17A /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = B05059271BD654B400F8F17A /* UIImageView+AFNetworking.m */; settings = {ASSET_TAGS = (); }; };
-		B050594D1BD654B400F8F17A /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = B05059281BD654B400F8F17A /* UIKit+AFNetworking.h */; settings = {ASSET_TAGS = (); }; };
-		B050594E1BD654B400F8F17A /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = B05059291BD654B400F8F17A /* UIProgressView+AFNetworking.h */; settings = {ASSET_TAGS = (); }; };
-		B050594F1BD654B400F8F17A /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = B050592A1BD654B400F8F17A /* UIProgressView+AFNetworking.m */; settings = {ASSET_TAGS = (); }; };
-		B05059501BD654B400F8F17A /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = B050592B1BD654B400F8F17A /* UIRefreshControl+AFNetworking.h */; settings = {ASSET_TAGS = (); }; };
-		B05059511BD654B400F8F17A /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = B050592C1BD654B400F8F17A /* UIRefreshControl+AFNetworking.m */; settings = {ASSET_TAGS = (); }; };
-		B05059521BD654B400F8F17A /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = B050592D1BD654B400F8F17A /* UIWebView+AFNetworking.h */; settings = {ASSET_TAGS = (); }; };
-		B05059531BD654B400F8F17A /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = B050592E1BD654B400F8F17A /* UIWebView+AFNetworking.m */; settings = {ASSET_TAGS = (); }; };
-		B050595B1BD6559800F8F17A /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B05059561BD6559800F8F17A /* JSONKit.h */; settings = {ASSET_TAGS = (); }; };
+		B0355FA81BD56FBD00DD54EB /* HQAEventPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B0355FA71BD56FBD00DD54EB /* HQAEventPathManager.m */; };
+		B0355FAC1BD5705500DD54EB /* HQAJSONParser.h in Headers */ = {isa = PBXBuildFile; fileRef = B0355FAB1BD5705500DD54EB /* HQAJSONParser.h */; };
+		B0355FAE1BD5706D00DD54EB /* HQAParser.h in Headers */ = {isa = PBXBuildFile; fileRef = B0355FAD1BD5706D00DD54EB /* HQAParser.h */; };
+		B0355FB01BD5711500DD54EB /* HQAJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B0355FAF1BD5711500DD54EB /* HQAJSONParser.m */; };
+		B0355FB21BD5711D00DD54EB /* HQAParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B0355FB11BD5711D00DD54EB /* HQAParser.m */; };
+		B0355FB51BD572A200DD54EB /* HQANetworkConnect.h in Headers */ = {isa = PBXBuildFile; fileRef = B0355FB41BD572A200DD54EB /* HQANetworkConnect.h */; };
+		B0355FB71BD572DD00DD54EB /* HQANetworkException.h in Headers */ = {isa = PBXBuildFile; fileRef = B0355FB61BD572DD00DD54EB /* HQANetworkException.h */; };
+		B0355FBB1BD572FE00DD54EB /* HQANetworkObject.h in Headers */ = {isa = PBXBuildFile; fileRef = B0355FBA1BD572FE00DD54EB /* HQANetworkObject.h */; };
+		B0355FBD1BD5735F00DD54EB /* HQANetworkObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B0355FBC1BD5735F00DD54EB /* HQANetworkObject.m */; };
+		B0355FBF1BD5745800DD54EB /* HQANetworkConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = B0355FBE1BD5745800DD54EB /* HQANetworkConnect.m */; };
+		B0355FC11BD574AC00DD54EB /* HQANetworkException.m in Sources */ = {isa = PBXBuildFile; fileRef = B0355FC01BD574AC00DD54EB /* HQANetworkException.m */; };
+		B050592F1BD654B400F8F17A /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = B05059091BD654B400F8F17A /* AFHTTPRequestOperation.h */; };
+		B05059301BD654B400F8F17A /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B050590A1BD654B400F8F17A /* AFHTTPRequestOperation.m */; };
+		B05059311BD654B400F8F17A /* AFHTTPRequestOperationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B050590B1BD654B400F8F17A /* AFHTTPRequestOperationManager.h */; };
+		B05059321BD654B400F8F17A /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B050590C1BD654B400F8F17A /* AFHTTPRequestOperationManager.m */; };
+		B05059331BD654B400F8F17A /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B050590D1BD654B400F8F17A /* AFHTTPSessionManager.h */; };
+		B05059341BD654B400F8F17A /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B050590E1BD654B400F8F17A /* AFHTTPSessionManager.m */; };
+		B05059351BD654B400F8F17A /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = B050590F1BD654B400F8F17A /* AFNetworking.h */; };
+		B05059361BD654B400F8F17A /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B05059101BD654B400F8F17A /* AFNetworkReachabilityManager.h */; };
+		B05059371BD654B400F8F17A /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B05059111BD654B400F8F17A /* AFNetworkReachabilityManager.m */; };
+		B05059381BD654B400F8F17A /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = B05059121BD654B400F8F17A /* AFSecurityPolicy.h */; };
+		B05059391BD654B400F8F17A /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = B05059131BD654B400F8F17A /* AFSecurityPolicy.m */; };
+		B050593A1BD654B400F8F17A /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = B05059141BD654B400F8F17A /* AFURLConnectionOperation.h */; };
+		B050593B1BD654B400F8F17A /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B05059151BD654B400F8F17A /* AFURLConnectionOperation.m */; };
+		B050593C1BD654B400F8F17A /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = B05059161BD654B400F8F17A /* AFURLRequestSerialization.h */; };
+		B050593D1BD654B400F8F17A /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = B05059171BD654B400F8F17A /* AFURLRequestSerialization.m */; };
+		B050593E1BD654B400F8F17A /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = B05059181BD654B400F8F17A /* AFURLResponseSerialization.h */; };
+		B050593F1BD654B400F8F17A /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = B05059191BD654B400F8F17A /* AFURLResponseSerialization.m */; };
+		B05059401BD654B400F8F17A /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B050591A1BD654B400F8F17A /* AFURLSessionManager.h */; };
+		B05059411BD654B400F8F17A /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B050591B1BD654B400F8F17A /* AFURLSessionManager.m */; };
+		B05059421BD654B400F8F17A /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B050591D1BD654B400F8F17A /* AFNetworkActivityIndicatorManager.h */; };
+		B05059431BD654B400F8F17A /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B050591E1BD654B400F8F17A /* AFNetworkActivityIndicatorManager.m */; };
+		B05059441BD654B400F8F17A /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = B050591F1BD654B400F8F17A /* UIActivityIndicatorView+AFNetworking.h */; };
+		B05059451BD654B400F8F17A /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = B05059201BD654B400F8F17A /* UIActivityIndicatorView+AFNetworking.m */; };
+		B05059461BD654B400F8F17A /* UIAlertView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = B05059211BD654B400F8F17A /* UIAlertView+AFNetworking.h */; };
+		B05059471BD654B400F8F17A /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = B05059221BD654B400F8F17A /* UIAlertView+AFNetworking.m */; };
+		B05059481BD654B400F8F17A /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = B05059231BD654B400F8F17A /* UIButton+AFNetworking.h */; };
+		B05059491BD654B400F8F17A /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = B05059241BD654B400F8F17A /* UIButton+AFNetworking.m */; };
+		B050594A1BD654B400F8F17A /* UIImage+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = B05059251BD654B400F8F17A /* UIImage+AFNetworking.h */; };
+		B050594B1BD654B400F8F17A /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = B05059261BD654B400F8F17A /* UIImageView+AFNetworking.h */; };
+		B050594C1BD654B400F8F17A /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = B05059271BD654B400F8F17A /* UIImageView+AFNetworking.m */; };
+		B050594D1BD654B400F8F17A /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = B05059281BD654B400F8F17A /* UIKit+AFNetworking.h */; };
+		B050594E1BD654B400F8F17A /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = B05059291BD654B400F8F17A /* UIProgressView+AFNetworking.h */; };
+		B050594F1BD654B400F8F17A /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = B050592A1BD654B400F8F17A /* UIProgressView+AFNetworking.m */; };
+		B05059501BD654B400F8F17A /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = B050592B1BD654B400F8F17A /* UIRefreshControl+AFNetworking.h */; };
+		B05059511BD654B400F8F17A /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = B050592C1BD654B400F8F17A /* UIRefreshControl+AFNetworking.m */; };
+		B05059521BD654B400F8F17A /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = B050592D1BD654B400F8F17A /* UIWebView+AFNetworking.h */; };
+		B05059531BD654B400F8F17A /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = B050592E1BD654B400F8F17A /* UIWebView+AFNetworking.m */; };
+		B050595B1BD6559800F8F17A /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B05059561BD6559800F8F17A /* JSONKit.h */; };
 		B050595C1BD6559800F8F17A /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B05059571BD6559800F8F17A /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		B050599F1BD6581900F8F17A /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = B05059871BD6581900F8F17A /* Reachability.h */; settings = {ASSET_TAGS = (); }; };
-		B05059A01BD6581900F8F17A /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B05059881BD6581900F8F17A /* Reachability.m */; settings = {ASSET_TAGS = (); }; };
-		B05059B11BD658A300F8F17A /* KeychainItemWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = B05059B01BD658A300F8F17A /* KeychainItemWrapper.h */; settings = {ASSET_TAGS = (); }; };
+		B050599F1BD6581900F8F17A /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = B05059871BD6581900F8F17A /* Reachability.h */; };
+		B05059A01BD6581900F8F17A /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B05059881BD6581900F8F17A /* Reachability.m */; };
+		B05059B11BD658A300F8F17A /* KeychainItemWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = B05059B01BD658A300F8F17A /* KeychainItemWrapper.h */; };
 		B05059B31BD658CF00F8F17A /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = B05059B21BD658CF00F8F17A /* KeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B07DFEFE1BD51197006D72A5 /* HQAClient.h in Headers */ = {isa = PBXBuildFile; fileRef = B07DFEFD1BD51197006D72A5 /* HQAClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B07DFF071BD5181A006D72A5 /* HQAClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B07DFF061BD5181A006D72A5 /* HQAClient.m */; settings = {ASSET_TAGS = (); }; };
+		B07DFF071BD5181A006D72A5 /* HQAClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B07DFF061BD5181A006D72A5 /* HQAClient.m */; };
 		B07DFF0A1BD51894006D72A5 /* HQADefines.h in Headers */ = {isa = PBXBuildFile; fileRef = B07DFF091BD51894006D72A5 /* HQADefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B07DFF0C1BD518ED006D72A5 /* HQADefines.m in Sources */ = {isa = PBXBuildFile; fileRef = B07DFF0B1BD518ED006D72A5 /* HQADefines.m */; settings = {ASSET_TAGS = (); }; };
-		B07DFF0E1BD53D25006D72A5 /* HQAConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = B07DFF0D1BD53D25006D72A5 /* HQAConfig.h */; settings = {ASSET_TAGS = (); }; };
-		B07DFF121BD5453C006D72A5 /* HQANextRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = B07DFF111BD5453C006D72A5 /* HQANextRequest.h */; settings = {ASSET_TAGS = (); }; };
-		B07DFF141BD54567006D72A5 /* HQANextRequestArgument.h in Headers */ = {isa = PBXBuildFile; fileRef = B07DFF131BD54567006D72A5 /* HQANextRequestArgument.h */; settings = {ASSET_TAGS = (); }; };
-		B07DFF161BD545C6006D72A5 /* HQAResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = B07DFF151BD545C6006D72A5 /* HQAResponse.h */; settings = {ASSET_TAGS = (); }; };
-		B07DFF181BD546F2006D72A5 /* HQAResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B07DFF171BD546F2006D72A5 /* HQAResponse.m */; settings = {ASSET_TAGS = (); }; };
-		B07DFF1A1BD547DA006D72A5 /* HQANextRequestArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = B07DFF191BD547DA006D72A5 /* HQANextRequestArgument.m */; settings = {ASSET_TAGS = (); }; };
-		B07DFF1C1BD54808006D72A5 /* HQANextRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B07DFF1B1BD54808006D72A5 /* HQANextRequest.m */; settings = {ASSET_TAGS = (); }; };
-		B07DFF1E1BD54DBC006D72A5 /* HQADataObject.h in Headers */ = {isa = PBXBuildFile; fileRef = B07DFF1D1BD54DBC006D72A5 /* HQADataObject.h */; settings = {ASSET_TAGS = (); }; };
-		B07DFF201BD5689A006D72A5 /* HQADataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B07DFF1F1BD5689A006D72A5 /* HQADataObject.m */; settings = {ASSET_TAGS = (); }; };
-		B07DFF221BD568CE006D72A5 /* HQADeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = B07DFF211BD568CE006D72A5 /* HQADeviceInfo.h */; settings = {ASSET_TAGS = (); }; };
-		B07DFF241BD568E3006D72A5 /* HQAEventPath.h in Headers */ = {isa = PBXBuildFile; fileRef = B07DFF231BD568E3006D72A5 /* HQAEventPath.h */; settings = {ASSET_TAGS = (); }; };
-		B07DFF261BD568F8006D72A5 /* HQAExceptionInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = B07DFF251BD568F8006D72A5 /* HQAExceptionInfo.h */; settings = {ASSET_TAGS = (); }; };
-		B07DFF281BD5699F006D72A5 /* HQADeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B07DFF271BD5699F006D72A5 /* HQADeviceInfo.m */; settings = {ASSET_TAGS = (); }; };
-		B07DFF2A1BD569CB006D72A5 /* HQAEventPath.m in Sources */ = {isa = PBXBuildFile; fileRef = B07DFF291BD569CB006D72A5 /* HQAEventPath.m */; settings = {ASSET_TAGS = (); }; };
-		B07DFF2C1BD56A26006D72A5 /* HQAExceptionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B07DFF2B1BD56A26006D72A5 /* HQAExceptionInfo.m */; settings = {ASSET_TAGS = (); }; };
-		B07DFF2E1BD56B3B006D72A5 /* HQACrashReport.m in Sources */ = {isa = PBXBuildFile; fileRef = B07DFF2D1BD56B3B006D72A5 /* HQACrashReport.m */; settings = {ASSET_TAGS = (); }; };
-		B07DFF301BD56B45006D72A5 /* HQACrashReport.h in Headers */ = {isa = PBXBuildFile; fileRef = B07DFF2F1BD56B45006D72A5 /* HQACrashReport.h */; settings = {ASSET_TAGS = (); }; };
-		B07DFF321BD56B71006D72A5 /* HQADataObjectMerge.h in Headers */ = {isa = PBXBuildFile; fileRef = B07DFF311BD56B71006D72A5 /* HQADataObjectMerge.h */; settings = {ASSET_TAGS = (); }; };
-		B07DFF341BD56B7E006D72A5 /* HQADataObjectMerge.m in Sources */ = {isa = PBXBuildFile; fileRef = B07DFF331BD56B7E006D72A5 /* HQADataObjectMerge.m */; settings = {ASSET_TAGS = (); }; };
-		B07DFF371BD56CB7006D72A5 /* HQADeviceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B07DFF361BD56CB7006D72A5 /* HQADeviceManager.h */; settings = {ASSET_TAGS = (); }; };
-		B07DFF391BD56CC3006D72A5 /* HQAEventPathManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B07DFF381BD56CC3006D72A5 /* HQAEventPathManager.h */; settings = {ASSET_TAGS = (); }; };
-		B07DFF3B1BD56D02006D72A5 /* HQADeviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B07DFF3A1BD56D02006D72A5 /* HQADeviceManager.m */; settings = {ASSET_TAGS = (); }; };
+		B07DFF0C1BD518ED006D72A5 /* HQADefines.m in Sources */ = {isa = PBXBuildFile; fileRef = B07DFF0B1BD518ED006D72A5 /* HQADefines.m */; };
+		B07DFF0E1BD53D25006D72A5 /* HQAConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = B07DFF0D1BD53D25006D72A5 /* HQAConfig.h */; };
+		B07DFF121BD5453C006D72A5 /* HQANextRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = B07DFF111BD5453C006D72A5 /* HQANextRequest.h */; };
+		B07DFF141BD54567006D72A5 /* HQANextRequestArgument.h in Headers */ = {isa = PBXBuildFile; fileRef = B07DFF131BD54567006D72A5 /* HQANextRequestArgument.h */; };
+		B07DFF161BD545C6006D72A5 /* HQAResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = B07DFF151BD545C6006D72A5 /* HQAResponse.h */; };
+		B07DFF181BD546F2006D72A5 /* HQAResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B07DFF171BD546F2006D72A5 /* HQAResponse.m */; };
+		B07DFF1A1BD547DA006D72A5 /* HQANextRequestArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = B07DFF191BD547DA006D72A5 /* HQANextRequestArgument.m */; };
+		B07DFF1C1BD54808006D72A5 /* HQANextRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B07DFF1B1BD54808006D72A5 /* HQANextRequest.m */; };
+		B07DFF1E1BD54DBC006D72A5 /* HQADataObject.h in Headers */ = {isa = PBXBuildFile; fileRef = B07DFF1D1BD54DBC006D72A5 /* HQADataObject.h */; };
+		B07DFF201BD5689A006D72A5 /* HQADataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B07DFF1F1BD5689A006D72A5 /* HQADataObject.m */; };
+		B07DFF221BD568CE006D72A5 /* HQADeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = B07DFF211BD568CE006D72A5 /* HQADeviceInfo.h */; };
+		B07DFF241BD568E3006D72A5 /* HQAEventPath.h in Headers */ = {isa = PBXBuildFile; fileRef = B07DFF231BD568E3006D72A5 /* HQAEventPath.h */; };
+		B07DFF261BD568F8006D72A5 /* HQAExceptionInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = B07DFF251BD568F8006D72A5 /* HQAExceptionInfo.h */; };
+		B07DFF281BD5699F006D72A5 /* HQADeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B07DFF271BD5699F006D72A5 /* HQADeviceInfo.m */; };
+		B07DFF2A1BD569CB006D72A5 /* HQAEventPath.m in Sources */ = {isa = PBXBuildFile; fileRef = B07DFF291BD569CB006D72A5 /* HQAEventPath.m */; };
+		B07DFF2C1BD56A26006D72A5 /* HQAExceptionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B07DFF2B1BD56A26006D72A5 /* HQAExceptionInfo.m */; };
+		B07DFF2E1BD56B3B006D72A5 /* HQACrashReport.m in Sources */ = {isa = PBXBuildFile; fileRef = B07DFF2D1BD56B3B006D72A5 /* HQACrashReport.m */; };
+		B07DFF301BD56B45006D72A5 /* HQACrashReport.h in Headers */ = {isa = PBXBuildFile; fileRef = B07DFF2F1BD56B45006D72A5 /* HQACrashReport.h */; };
+		B07DFF321BD56B71006D72A5 /* HQADataObjectMerge.h in Headers */ = {isa = PBXBuildFile; fileRef = B07DFF311BD56B71006D72A5 /* HQADataObjectMerge.h */; };
+		B07DFF341BD56B7E006D72A5 /* HQADataObjectMerge.m in Sources */ = {isa = PBXBuildFile; fileRef = B07DFF331BD56B7E006D72A5 /* HQADataObjectMerge.m */; };
+		B07DFF371BD56CB7006D72A5 /* HQADeviceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B07DFF361BD56CB7006D72A5 /* HQADeviceManager.h */; };
+		B07DFF391BD56CC3006D72A5 /* HQAEventPathManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B07DFF381BD56CC3006D72A5 /* HQAEventPathManager.h */; };
+		B07DFF3B1BD56D02006D72A5 /* HQADeviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B07DFF3A1BD56D02006D72A5 /* HQADeviceManager.m */; };
 		B08EFF821BD6785300711B4F /* libCrashReporter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B08EFF811BD6785300711B4F /* libCrashReporter.a */; };
-		B08EFF9A1BD6792C00711B4F /* CrashReporter.h in Headers */ = {isa = PBXBuildFile; fileRef = B08EFF841BD6792C00711B4F /* CrashReporter.h */; settings = {ASSET_TAGS = (); }; };
-		B08EFF9B1BD6792C00711B4F /* PLCrashAsyncSignalInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = B08EFF851BD6792C00711B4F /* PLCrashAsyncSignalInfo.h */; settings = {ASSET_TAGS = (); }; };
-		B08EFF9C1BD6792C00711B4F /* PLCrashFeatureConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = B08EFF861BD6792C00711B4F /* PLCrashFeatureConfig.h */; settings = {ASSET_TAGS = (); }; };
-		B08EFF9D1BD6792C00711B4F /* PLCrashNamespace.h in Headers */ = {isa = PBXBuildFile; fileRef = B08EFF871BD6792C00711B4F /* PLCrashNamespace.h */; settings = {ASSET_TAGS = (); }; };
-		B08EFF9E1BD6792C00711B4F /* PLCrashReport.h in Headers */ = {isa = PBXBuildFile; fileRef = B08EFF881BD6792C00711B4F /* PLCrashReport.h */; settings = {ASSET_TAGS = (); }; };
-		B08EFF9F1BD6792C00711B4F /* PLCrashReportApplicationInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = B08EFF891BD6792C00711B4F /* PLCrashReportApplicationInfo.h */; settings = {ASSET_TAGS = (); }; };
-		B08EFFA01BD6792C00711B4F /* PLCrashReportBinaryImageInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = B08EFF8A1BD6792C00711B4F /* PLCrashReportBinaryImageInfo.h */; settings = {ASSET_TAGS = (); }; };
-		B08EFFA11BD6792C00711B4F /* PLCrashReporter.h in Headers */ = {isa = PBXBuildFile; fileRef = B08EFF8B1BD6792C00711B4F /* PLCrashReporter.h */; settings = {ASSET_TAGS = (); }; };
-		B08EFFA21BD6792C00711B4F /* PLCrashReporterConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = B08EFF8C1BD6792C00711B4F /* PLCrashReporterConfig.h */; settings = {ASSET_TAGS = (); }; };
-		B08EFFA31BD6792C00711B4F /* PLCrashReportExceptionInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = B08EFF8D1BD6792C00711B4F /* PLCrashReportExceptionInfo.h */; settings = {ASSET_TAGS = (); }; };
-		B08EFFA41BD6792C00711B4F /* PLCrashReportFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = B08EFF8E1BD6792C00711B4F /* PLCrashReportFormatter.h */; settings = {ASSET_TAGS = (); }; };
-		B08EFFA51BD6792C00711B4F /* PLCrashReportMachExceptionInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = B08EFF8F1BD6792C00711B4F /* PLCrashReportMachExceptionInfo.h */; settings = {ASSET_TAGS = (); }; };
-		B08EFFA61BD6792C00711B4F /* PLCrashReportMachineInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = B08EFF901BD6792C00711B4F /* PLCrashReportMachineInfo.h */; settings = {ASSET_TAGS = (); }; };
-		B08EFFA71BD6792C00711B4F /* PLCrashReportProcessInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = B08EFF911BD6792C00711B4F /* PLCrashReportProcessInfo.h */; settings = {ASSET_TAGS = (); }; };
-		B08EFFA81BD6792C00711B4F /* PLCrashReportProcessorInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = B08EFF921BD6792C00711B4F /* PLCrashReportProcessorInfo.h */; settings = {ASSET_TAGS = (); }; };
-		B08EFFA91BD6792C00711B4F /* PLCrashReportRegisterInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = B08EFF931BD6792C00711B4F /* PLCrashReportRegisterInfo.h */; settings = {ASSET_TAGS = (); }; };
-		B08EFFAA1BD6792C00711B4F /* PLCrashReportSignalInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = B08EFF941BD6792C00711B4F /* PLCrashReportSignalInfo.h */; settings = {ASSET_TAGS = (); }; };
-		B08EFFAB1BD6792C00711B4F /* PLCrashReportStackFrameInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = B08EFF951BD6792C00711B4F /* PLCrashReportStackFrameInfo.h */; settings = {ASSET_TAGS = (); }; };
-		B08EFFAC1BD6792C00711B4F /* PLCrashReportSymbolInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = B08EFF961BD6792C00711B4F /* PLCrashReportSymbolInfo.h */; settings = {ASSET_TAGS = (); }; };
-		B08EFFAD1BD6792C00711B4F /* PLCrashReportSystemInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = B08EFF971BD6792C00711B4F /* PLCrashReportSystemInfo.h */; settings = {ASSET_TAGS = (); }; };
-		B08EFFAE1BD6792C00711B4F /* PLCrashReportTextFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = B08EFF981BD6792C00711B4F /* PLCrashReportTextFormatter.h */; settings = {ASSET_TAGS = (); }; };
-		B08EFFAF1BD6792C00711B4F /* PLCrashReportThreadInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = B08EFF991BD6792C00711B4F /* PLCrashReportThreadInfo.h */; settings = {ASSET_TAGS = (); }; };
+		B08EFF9A1BD6792C00711B4F /* CrashReporter.h in Headers */ = {isa = PBXBuildFile; fileRef = B08EFF841BD6792C00711B4F /* CrashReporter.h */; };
+		B08EFF9B1BD6792C00711B4F /* PLCrashAsyncSignalInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = B08EFF851BD6792C00711B4F /* PLCrashAsyncSignalInfo.h */; };
+		B08EFF9C1BD6792C00711B4F /* PLCrashFeatureConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = B08EFF861BD6792C00711B4F /* PLCrashFeatureConfig.h */; };
+		B08EFF9D1BD6792C00711B4F /* PLCrashNamespace.h in Headers */ = {isa = PBXBuildFile; fileRef = B08EFF871BD6792C00711B4F /* PLCrashNamespace.h */; };
+		B08EFF9E1BD6792C00711B4F /* PLCrashReport.h in Headers */ = {isa = PBXBuildFile; fileRef = B08EFF881BD6792C00711B4F /* PLCrashReport.h */; };
+		B08EFF9F1BD6792C00711B4F /* PLCrashReportApplicationInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = B08EFF891BD6792C00711B4F /* PLCrashReportApplicationInfo.h */; };
+		B08EFFA01BD6792C00711B4F /* PLCrashReportBinaryImageInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = B08EFF8A1BD6792C00711B4F /* PLCrashReportBinaryImageInfo.h */; };
+		B08EFFA11BD6792C00711B4F /* PLCrashReporter.h in Headers */ = {isa = PBXBuildFile; fileRef = B08EFF8B1BD6792C00711B4F /* PLCrashReporter.h */; };
+		B08EFFA21BD6792C00711B4F /* PLCrashReporterConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = B08EFF8C1BD6792C00711B4F /* PLCrashReporterConfig.h */; };
+		B08EFFA31BD6792C00711B4F /* PLCrashReportExceptionInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = B08EFF8D1BD6792C00711B4F /* PLCrashReportExceptionInfo.h */; };
+		B08EFFA41BD6792C00711B4F /* PLCrashReportFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = B08EFF8E1BD6792C00711B4F /* PLCrashReportFormatter.h */; };
+		B08EFFA51BD6792C00711B4F /* PLCrashReportMachExceptionInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = B08EFF8F1BD6792C00711B4F /* PLCrashReportMachExceptionInfo.h */; };
+		B08EFFA61BD6792C00711B4F /* PLCrashReportMachineInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = B08EFF901BD6792C00711B4F /* PLCrashReportMachineInfo.h */; };
+		B08EFFA71BD6792C00711B4F /* PLCrashReportProcessInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = B08EFF911BD6792C00711B4F /* PLCrashReportProcessInfo.h */; };
+		B08EFFA81BD6792C00711B4F /* PLCrashReportProcessorInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = B08EFF921BD6792C00711B4F /* PLCrashReportProcessorInfo.h */; };
+		B08EFFA91BD6792C00711B4F /* PLCrashReportRegisterInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = B08EFF931BD6792C00711B4F /* PLCrashReportRegisterInfo.h */; };
+		B08EFFAA1BD6792C00711B4F /* PLCrashReportSignalInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = B08EFF941BD6792C00711B4F /* PLCrashReportSignalInfo.h */; };
+		B08EFFAB1BD6792C00711B4F /* PLCrashReportStackFrameInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = B08EFF951BD6792C00711B4F /* PLCrashReportStackFrameInfo.h */; };
+		B08EFFAC1BD6792C00711B4F /* PLCrashReportSymbolInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = B08EFF961BD6792C00711B4F /* PLCrashReportSymbolInfo.h */; };
+		B08EFFAD1BD6792C00711B4F /* PLCrashReportSystemInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = B08EFF971BD6792C00711B4F /* PLCrashReportSystemInfo.h */; };
+		B08EFFAE1BD6792C00711B4F /* PLCrashReportTextFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = B08EFF981BD6792C00711B4F /* PLCrashReportTextFormatter.h */; };
+		B08EFFAF1BD6792C00711B4F /* PLCrashReportThreadInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = B08EFF991BD6792C00711B4F /* PLCrashReportThreadInfo.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -122,12 +120,10 @@
 		B0355FB11BD5711D00DD54EB /* HQAParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQAParser.m; sourceTree = "<group>"; };
 		B0355FB41BD572A200DD54EB /* HQANetworkConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQANetworkConnect.h; sourceTree = "<group>"; };
 		B0355FB61BD572DD00DD54EB /* HQANetworkException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQANetworkException.h; sourceTree = "<group>"; };
-		B0355FB81BD572EE00DD54EB /* HQANetworkExceptionLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQANetworkExceptionLog.h; sourceTree = "<group>"; };
 		B0355FBA1BD572FE00DD54EB /* HQANetworkObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQANetworkObject.h; sourceTree = "<group>"; };
 		B0355FBC1BD5735F00DD54EB /* HQANetworkObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQANetworkObject.m; sourceTree = "<group>"; };
 		B0355FBE1BD5745800DD54EB /* HQANetworkConnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQANetworkConnect.m; sourceTree = "<group>"; };
 		B0355FC01BD574AC00DD54EB /* HQANetworkException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQANetworkException.m; sourceTree = "<group>"; };
-		B0355FC21BD5762800DD54EB /* HQANetworkExceptionLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQANetworkExceptionLog.m; sourceTree = "<group>"; };
 		B05059091BD654B400F8F17A /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		B050590A1BD654B400F8F17A /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		B050590B1BD654B400F8F17A /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -268,8 +264,6 @@
 				B0355FBE1BD5745800DD54EB /* HQANetworkConnect.m */,
 				B0355FB61BD572DD00DD54EB /* HQANetworkException.h */,
 				B0355FC01BD574AC00DD54EB /* HQANetworkException.m */,
-				B0355FB81BD572EE00DD54EB /* HQANetworkExceptionLog.h */,
-				B0355FC21BD5762800DD54EB /* HQANetworkExceptionLog.m */,
 			);
 			name = Network;
 			sourceTree = "<group>";
@@ -520,7 +514,6 @@
 				B08EFFA21BD6792C00711B4F /* PLCrashReporterConfig.h in Headers */,
 				B08EFFA51BD6792C00711B4F /* PLCrashReportMachExceptionInfo.h in Headers */,
 				B08EFFA61BD6792C00711B4F /* PLCrashReportMachineInfo.h in Headers */,
-				B0355FB91BD572EE00DD54EB /* HQANetworkExceptionLog.h in Headers */,
 				B08EFFA81BD6792C00711B4F /* PLCrashReportProcessorInfo.h in Headers */,
 				B08EFFA31BD6792C00711B4F /* PLCrashReportExceptionInfo.h in Headers */,
 				B050594D1BD654B400F8F17A /* UIKit+AFNetworking.h in Headers */,
@@ -668,7 +661,6 @@
 				B05059371BD654B400F8F17A /* AFNetworkReachabilityManager.m in Sources */,
 				B050593F1BD654B400F8F17A /* AFURLResponseSerialization.m in Sources */,
 				B050593D1BD654B400F8F17A /* AFURLRequestSerialization.m in Sources */,
-				B0355FC31BD5762800DD54EB /* HQANetworkExceptionLog.m in Sources */,
 				B0355FC11BD574AC00DD54EB /* HQANetworkException.m in Sources */,
 				B07DFF181BD546F2006D72A5 /* HQAResponse.m in Sources */,
 				B0355FBF1BD5745800DD54EB /* HQANetworkConnect.m in Sources */,
