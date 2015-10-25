@@ -78,9 +78,6 @@
     return self;
 }
 
-// NSString* report = [PLCrashReportTextFormatter stringValueForCrashReport:crashReport withTextFormat: textFormat];
-// NSLog(@"Crash log \n\n\n%@ \n\n\n", report);
-
 - (id)initWithCrashReport:(PLCrashReport *)crashReport deviceInfo:(HQADeviceInfo *)deviceInfo exceptionInfo:(HQAExceptionInfo *)exceptionInfo
 {
     self = [super init];
