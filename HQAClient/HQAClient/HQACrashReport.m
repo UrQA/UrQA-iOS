@@ -180,9 +180,42 @@
             if (crashReport.processInfo.processPath != nil)
                 [report_process setObject:crashReport.processInfo.processPath forKey:@"processPath"];
         }
-        if (crashReport.hasExceptionInfo) {
-            [report_process setObject:crashReport.exceptionInfo.exceptionName forKey:@"exceptionName"];
-            [report_process setObject:crashReport.exceptionInfo.exceptionReason forKey:@"exceptionReason"];
+        if (exceptionInfo)
+        {
+            [report_process setObject:exceptionInfo.exceptionName forKey:@"exceptionName"];
+            [report_process setObject:exceptionInfo.exceptionReason forKey:@"exceptionReason"];
+            _exceptionName = exceptionInfo.exceptionName;
+            _exceptionReason = exceptionInfo.exceptionReason;
+            
+            if ([exceptionInfo.stackTrace count] > 0){
+                [report_process setObject:exceptionInfo.stackTrace[0] forKey:@"exceptionFunction"];
+                _exceptionFunction = exceptionInfo.stackTrace[0];
+            }
+        }
+        else
+        {
+            if (crashReport.hasExceptionInfo)
+            {
+                [report_process setObject:crashReport.exceptionInfo.exceptionName forKey:@"exceptionName"];
+                [report_process setObject:crashReport.exceptionInfo.exceptionReason forKey:@"exceptionReason"];
+                _exceptionName = crashReport.exceptionInfo.exceptionName;
+                _exceptionReason = crashReport.exceptionInfo.exceptionReason;
+                
+                if ([crashReport.exceptionInfo.stackFrames count] > 2 &&
+                    [crashReport.exceptionInfo.stackFrames[2] symbolInfo] &&
+                    [crashReport.exceptionInfo.stackFrames[2] symbolInfo].symbolName){
+                    [report_process setObject:[crashReport.exceptionInfo.stackFrames[2] symbolInfo].symbolName forKey:@"exceptionFunction"];
+                    _exceptionFunction = [crashReport.exceptionInfo.stackFrames[2] symbolInfo].symbolName;
+                }
+            }
+            else
+            {
+                [report_process setObject:crashReport.exceptionInfo.exceptionName forKey:@"exceptionName"];
+                [report_process setObject:crashReport.exceptionInfo.exceptionReason forKey:@"exceptionReason"];
+                _exceptionName = crashReport.signalInfo.name;
+                _exceptionReason = crashReport.signalInfo.code;
+                _exceptionFunction = [NSString stringWithFormat:@"0x%llx", crashReport.signalInfo.address];
+            }
         }
         /* If an exception stack trace is available, output an Apple-compatible backtrace. */
         if (crashReport.exceptionInfo != nil && crashReport.exceptionInfo.stackFrames != nil && [crashReport.exceptionInfo.stackFrames count] > 0) {
@@ -243,34 +276,6 @@
         [_hqaData setObject:report_register forKey:@"register"];
         [self setDeviceInfo:[HQADeviceManager createDeviceReportFromCrashReport:crashReport deviceInfo:deviceInfo]];
         _eventPaths = [[NSMutableArray alloc] init];
-        // _stackTrace = stackTrace;
-        if (exceptionInfo)
-        {
-            _exceptionName = exceptionInfo.exceptionName;
-            _exceptionReason = exceptionInfo.exceptionReason;
-            
-            if ([exceptionInfo.stackTrace count] > 0)
-                _exceptionFunction = exceptionInfo.stackTrace[0];
-        }
-        else
-        {
-            if (crashReport.hasExceptionInfo)
-            {
-                _exceptionName = crashReport.exceptionInfo.exceptionName;
-                _exceptionReason = crashReport.exceptionInfo.exceptionReason;
-                
-                if ([crashReport.exceptionInfo.stackFrames count] > 2 &&
-                    [crashReport.exceptionInfo.stackFrames[2] symbolInfo] &&
-                    [crashReport.exceptionInfo.stackFrames[2] symbolInfo].symbolName)
-                    _exceptionFunction = [crashReport.exceptionInfo.stackFrames[2] symbolInfo].symbolName;
-            }
-            else
-            {
-                _exceptionName = crashReport.signalInfo.name;
-                _exceptionReason = crashReport.signalInfo.code;
-                _exceptionFunction = [NSString stringWithFormat:@"0x%llx", crashReport.signalInfo.address];
-            }
-        }
         _datetime = crashReport.systemInfo.timestamp;
         
         [self refreshRequestData];
