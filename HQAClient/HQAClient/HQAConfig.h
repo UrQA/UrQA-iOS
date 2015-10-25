@@ -61,7 +61,7 @@
 
 // Definition
 #define HQA_VERSION            @"0.0.1"
-#define HQA_DOMAIN             @"http://devapi.honeyqa.io:8080/api/ios"
+#define HQA_DOMAIN             @"http://api.honeyqa.io/api/ios"
 #define HQA_REQUST_TYPE        @"JSON"
 
 // Console Logging
