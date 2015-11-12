@@ -34,7 +34,7 @@
     * `/api/ios/client/exception`
 
 ## Exception Data
-
+* `buildid` : Symbol UUID
 * `hqaData`
     * `arch` : Object 
         * `osName` : String
