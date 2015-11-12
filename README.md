@@ -1,4 +1,8 @@
-# honeyqa-iOS
+# HQAClient
+
+[![Version](https://img.shields.io/cocoapods/v/HQAClient.svg?style=flat)](http://cocoapods.org/pods/HQAClient)
+[![License](https://img.shields.io/cocoapods/l/HQAClient.svg?style=flat)](http://cocoapods.org/pods/HQAClient)
+[![Platform](https://img.shields.io/cocoapods/p/HQAClient.svg?style=flat)](http://cocoapods.org/pods/HQAClient)
 
 ## Usage
 
