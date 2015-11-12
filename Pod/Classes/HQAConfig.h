@@ -60,8 +60,8 @@
 #endif
 
 // Definition
-#define HQA_VERSION            @"0.0.1"
-#define HQA_DOMAIN             @"https://api2.honeyqa.io/api/ios"
+#define HQA_VERSION            @"0.1.1"
+#define HQA_DOMAIN             @"https://api2.honeyqa.io:80/api/ios"
 #define HQA_REQUST_TYPE        @"JSON"
 
 // Console Logging
