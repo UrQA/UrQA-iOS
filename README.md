@@ -4,6 +4,16 @@
 [![License](https://img.shields.io/cocoapods/l/HQAClient.svg?style=flat)](http://cocoapods.org/pods/HQAClient)
 [![Platform](https://img.shields.io/cocoapods/p/HQAClient.svg?style=flat)](http://cocoapods.org/pods/HQAClient)
 
+## Overview
+
+iOS Client for open source crash report service [honeyqa](https://honeyqa.io)
+
+## Installation
+
+Available through [CocoaPods](https://cocoapods.org/pods/HQAClient).
+
+``` pod 'HQAClient' ```
+
 ## Usage
 
 1. Initialize in didFinishLaunchingWithOptions (AppDelegate)
@@ -25,6 +35,17 @@
    ```[HQAClient logException:(NSException *)]```
    
    ```[HQAClient logException:(NSException *)]```
+   
+### iOS 9
+---
+Please edit your `.plist` file for send crash data to honeyqa server.
+
+There are 2 options,
+
+* add `Dictionary` named `NSAppTransportSecurity`
+   * add `Boolean | Yes` `NSAllowsArbitraryLoads` to `NSAppTransportSecurity`
+   * Or, add `Dictionary` named `NSExceptionDomains` to `NSAppTransportSecurity`
+      *  then, add `Dictionary` named `api2.honeyqa.io` to `NSExceptionDomains`
 
 ## route
 
