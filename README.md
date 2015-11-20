@@ -45,7 +45,7 @@ There are 2 options,
 * add `Dictionary` named `NSAppTransportSecurity`
    * add `Boolean | Yes` `NSAllowsArbitraryLoads` to `NSAppTransportSecurity`
    * Or, add `Dictionary` named `NSExceptionDomains` to `NSAppTransportSecurity`
-      *  then, add `Dictionary` named `api2.honeyqa.io` to `NSExceptionDomains`
+      *  then, add `Dictionary` named `api3.honeyqa.io` to `NSExceptionDomains`
 
 ## route
 
