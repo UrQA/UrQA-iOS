@@ -50,7 +50,7 @@
             NSArray *callStack = [NSThread callStackReturnAddresses];
             NSArray *callStackInfo = [NSThread callStackSymbols];
             NSMutableArray *stackTrace = [NSMutableArray new];
-            
+            NSCharacterSet *separatorSet = [NSCharacterSet characterSetWithCharactersInString:@" -[]+?.,"];
             for (int i = 3; i < callStack.count - 1; ++i)
             {
                 NSArray *stepArray = [callStackInfo[i] componentsSeparatedByString:@" "];
@@ -69,10 +69,12 @@
                 }
                 
                 stepArray = [prettyFunction componentsSeparatedByString:@" + "];
-                
+                NSMutableArray *hqaRaw = [NSMutableArray arrayWithArray:[callStackInfo[i]  componentsSeparatedByCharactersInSet:separatorSet]];
+                [hqaRaw removeObject:@""];
                 long instructionPointer = (long)[callStack[i] integerValue];
                 long minusAddress = (long)[stepArray[1] integerValue];
-                [stackTrace addObject:@{@"instructionPointer":[NSString stringWithFormat:@"0x%lx", instructionPointer],
+                [stackTrace addObject:@{@"hqaRaw":hqaRaw,
+                                        @"instructionPointer":[NSString stringWithFormat:@"0x%lx", instructionPointer],
                                         @"symbol":@{@"endAddress":@"0x0",
                                                     @"startAddress":[NSString stringWithFormat:@"0x%lx", (instructionPointer - minusAddress)],
                                                     @"symbolName":stepArray[0]}
