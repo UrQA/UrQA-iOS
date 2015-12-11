@@ -1,8 +1,8 @@
-# HQAClient
+# UrQAClient
 
-[![Version](https://img.shields.io/cocoapods/v/HQAClient.svg?style=flat)](http://cocoapods.org/pods/HQAClient)
-[![License](https://img.shields.io/cocoapods/l/HQAClient.svg?style=flat)](http://cocoapods.org/pods/HQAClient)
-[![Platform](https://img.shields.io/cocoapods/p/HQAClient.svg?style=flat)](http://cocoapods.org/pods/HQAClient)
+[![Version](https://img.shields.io/cocoapods/v/URQAClient.svg?style=flat)](http://cocoapods.org/pods/URQAClient)
+[![License](https://img.shields.io/cocoapods/l/URQAClient.svg?style=flat)](http://cocoapods.org/pods/URQAClient)
+[![Platform](https://img.shields.io/cocoapods/p/URQAClient.svg?style=flat)](http://cocoapods.org/pods/URQAClient)
 
 ## Overview
 
@@ -10,9 +10,9 @@ iOS Client for open source crash report service [honeyqa](https://honeyqa.io)
 
 ## Installation
 
-Available through [CocoaPods](https://cocoapods.org/pods/HQAClient).
+Available through [CocoaPods](https://cocoapods.org/pods/URQAClient).
 
-``` pod 'HQAClient' ```
+``` pod 'URQAClient' ```
 
 Also, you should add `use_frameworks!` to `Podfile`
 
@@ -20,27 +20,27 @@ Also, you should add `use_frameworks!` to `Podfile`
 
 1. Initialize in didFinishLaunchingWithOptions (AppDelegate)
 
-   ```[HQAClient sharedControllerWithAPIKey:@"YOUR_API_Key"]```
-2. If Application crashed, HQAClient will send crash data to HoneyQA Server
+   ```[URQAClient sharedControllerWithAPIKey:@"YOUR_API_Key"]```
+2. If Application crashed, URQAClient will send crash data to HoneyQA Server
 3. Or, you can send exception information manually by using
 
-   ```[HQAClient logException:(NSException *)]```
-   
-   ```[HQAClient logException:(NSException *) withTag:@"Tag name"]```
-   
-   ```[HQAClient logException:(NSException *) withTag:@"Tag name" andErrorRank:(HQAErrorRank)]```
-   
+   ```[URQAClient logException:(NSException *)]```
+
+   ```[URQAClient logException:(NSException *) withTag:@"Tag name"]```
+
+   ```[URQAClient logException:(NSException *) withTag:@"Tag name" andErrorRank:(URQAErrorRank)]```
+
 4. If you using `leaveBreadcrumb`, you can track user pattern untill application crash or exception
 
-   ```[HQAClient leaveBreadcrumb:(Integer : Linenumber)]```
-   
-   ```[HQAClient logException:(NSException *)]```
-   
-   ```[HQAClient logException:(NSException *)]```
-   
+   ```[URQAClient leaveBreadcrumb:(Integer : Linenumber)]```
+
+   ```[URQAClient logException:(NSException *)]```
+
+   ```[URQAClient logException:(NSException *)]```
+
 ### iOS 9
 ---
-Please edit your `.plist` file for send crash data to honeyqa server.
+Please edit your `.plist` file for send crash data to UrQA server.
 
 There are 2 options,
 
@@ -58,8 +58,8 @@ There are 2 options,
 
 ## Exception Data
 * `buildid` : Symbol UUID
-* `hqaData`
-    * `arch` : Object 
+* `URQAData`
+    * `arch` : Object
         * `osName` : String
             * device OS name
         * `codeType` : String
@@ -76,9 +76,9 @@ There are 2 options,
                 * Object
                     * `imageName` : String
                     * `baseAddress` : String
-                        * [!] when **symbol information is not null**, object will not contain `baseAddress` 
+                        * [!] when **symbol information is not null**, object will not contain `baseAddress`
                     * `symbolName` : String
-                        * [!] when **symbol information is null**, object will not contain `symbolName` 
+                        * [!] when **symbol information is null**, object will not contain `symbolName`
                     * `frameIndex` : String
                     * `offset` : String
             * `isCrashed` : String
@@ -87,17 +87,8 @@ There are 2 options,
 
 ## Symbolication
 
-* [atosl-java](https://github.com/honeyqa/atosl-java)
+* [atosl-java](https://github.com/UrQA/atosl-java)
 
-## Open Source License
+## Reference
 
-### [UrQA-iOS](https://github.com/UrQA/UrQA-Client-iOS)
-The MIT License (MIT)
-
-Copyright (c) urqa org
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+* [UrQA-iOS](https://github.com/UrQA/UrQA-Client-iOS)

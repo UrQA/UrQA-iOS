@@ -1,8 +1,8 @@
 //
-//  HQAClientTests.m
-//  HQAClientTests
+//  URQAClientTests.m
+//  URQAClientTests
 //
-//  Created by devholic on 11/12/2015.
+//  Created by devholic on 12/11/2015.
 //  Copyright (c) 2015 devholic. All rights reserved.
 //
 
