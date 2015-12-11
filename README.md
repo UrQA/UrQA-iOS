@@ -91,4 +91,4 @@ There are 2 options,
 
 ## Reference
 
-* [UrQA-iOS](https://github.com/UrQA/UrQA-Client-iOS)
+* [UrQA-Client-iOS](https://github.com/UrQA/UrQA-Client-iOS)
