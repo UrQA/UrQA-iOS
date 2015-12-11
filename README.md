@@ -14,6 +14,8 @@ Available through [CocoaPods](https://cocoapods.org/pods/HQAClient).
 
 ``` pod 'HQAClient' ```
 
+Also, you should add `use_frameworks!` to `Podfile`
+
 ## Usage
 
 1. Initialize in didFinishLaunchingWithOptions (AppDelegate)
